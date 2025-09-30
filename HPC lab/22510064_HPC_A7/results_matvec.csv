@@ -1,0 +1,50 @@
+Enter size of square matrix (n): Enter matrix (4 x 4):
+Enter vector (4 elements):
+Result vector:
+63 85 129 107 
+CSV_OUTPUT,4,1,0.040219
+Enter size of square matrix (n): Enter matrix (4 x 4):
+Enter vector (4 elements):
+Result vector:
+70 96 122 148 
+CSV_OUTPUT,4,2,0.025143
+Enter size of square matrix (n): Enter matrix (2 x 2):
+Enter vector (2 elements):
+Result vector:
+14 32 
+CSV_OUTPUT,2,1,0.008956
+Enter size of square matrix (n): Enter matrix (2 x 2):
+Enter vector (2 elements):
+Result vector:
+17 39 
+CSV_OUTPUT,2,2,0.006455
+Enter size of square matrix (n): Enter matrix (8 x 8):
+Enter vector (8 elements):
+Result vector:
+120 145 168 192 215 238 261 284
+CSV_OUTPUT,8,1,0.156483
+Enter size of square matrix (n): Enter matrix (8 x 8):
+Enter vector (8 elements):
+Result vector:
+135 162 189 216 243 270 297 324
+CSV_OUTPUT,8,2,0.089672
+Enter size of square matrix (n): Enter matrix (8 x 8):
+Enter vector (8 elements):
+Result vector:
+148 178 208 238 268 298 328 358
+CSV_OUTPUT,8,4,0.052341
+Enter size of square matrix (n): Enter matrix (16 x 16):
+Enter vector (16 elements):
+Result vector:
+240 265 290 315 340 365 390 415 440 465 490 515 540 565 590 615
+CSV_OUTPUT,16,1,0.625894
+Enter size of square matrix (n): Enter matrix (16 x 16):
+Enter vector (16 elements):
+Result vector:
+255 282 309 336 363 390 417 444 471 498 525 552 579 606 633 660
+CSV_OUTPUT,16,2,0.356721
+Enter size of square matrix (n): Enter matrix (16 x 16):
+Enter vector (16 elements):
+Result vector:
+268 297 326 355 384 413 442 471 500 529 558 587 616 645 674 703
+CSV_OUTPUT,16,4,0.198453

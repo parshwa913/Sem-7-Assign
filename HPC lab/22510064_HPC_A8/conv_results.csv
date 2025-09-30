@@ -1,0 +1,3 @@
+conv,NX=1024,NY=1024,procs=1,time_total=0.005664,time_comp=0.005663
+conv,NX=1024,NY=1024,procs=2,time_total=0.003270,time_comp=0.003240
+conv,NX=1024,NY=1024,procs=4,time_total=0.002371,time_comp=0.002336

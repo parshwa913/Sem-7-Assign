@@ -51,6 +51,8 @@ int main(int argc, char* argv[]) {
     local_C = (int*)malloc(rows_per_proc * n * sizeof(int));
     if (rank != 0) B = (int*)malloc(n * n * sizeof(int));
 
+    double start = MPI_Wtime();
+
     MPI_Scatter(A, rows_per_proc * n, MPI_INT,
                 local_A, rows_per_proc * n, MPI_INT,
                 0, MPI_COMM_WORLD);
@@ -70,6 +72,8 @@ int main(int argc, char* argv[]) {
                C, rows_per_proc * n, MPI_INT,
                0, MPI_COMM_WORLD);
 
+    double end = MPI_Wtime();
+
     if (rank == 0) {
         printf("Result matrix C:\n");
         for (int i = 0; i < n; i++) {
@@ -77,6 +81,8 @@ int main(int argc, char* argv[]) {
                 printf("%d ", C[i * n + j]);
             printf("\n");
         }
+
+        printf("CSV_OUTPUT,%d,%d,%f\n", n, size, (end - start) * 1000);
     }
 
     if (rank == 0) { free(A); free(B); free(C); }

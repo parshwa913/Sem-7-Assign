@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
 
     if (rank == 0) {
         printf("Enter size of square matrix (n): ");
-        fflush(stdout); 
+        fflush(stdout);
         scanf("%d", &n);
     }
 
@@ -50,6 +50,8 @@ int main(int argc, char* argv[]) {
     local_result = (int*)malloc(rows_per_proc * sizeof(int));
     if (rank != 0) vector = (int*)malloc(n * sizeof(int));
 
+    double start = MPI_Wtime();
+
     MPI_Scatter(matrix, rows_per_proc * n, MPI_INT,
                 local_matrix, rows_per_proc * n, MPI_INT,
                 0, MPI_COMM_WORLD);
@@ -67,11 +69,15 @@ int main(int argc, char* argv[]) {
                result, rows_per_proc, MPI_INT,
                0, MPI_COMM_WORLD);
 
+    double end = MPI_Wtime();
+
     if (rank == 0) {
         printf("Result vector:\n");
         for (int i = 0; i < n; i++)
             printf("%d ", result[i]);
         printf("\n");
+
+        printf("CSV_OUTPUT,%d,%d,%f\n", n, size, (end - start) * 1000);
     }
 
     if (rank == 0) { free(matrix); free(vector); free(result); }

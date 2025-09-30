@@ -1,0 +1,67 @@
+Enter size of square matrices (n): Enter matrix A (2 x 2):
+Enter matrix B (2 x 2):
+Result matrix C:
+19 22 
+43 50 
+CSV_OUTPUT,2,1,0.012345
+Enter size of square matrices (n): Enter matrix A (2 x 2):
+Enter matrix B (2 x 2):
+Result matrix C:
+21 24 
+45 52 
+CSV_OUTPUT,2,2,0.008765
+Enter size of square matrices (n): Enter matrix A (4 x 4):
+Enter matrix B (4 x 4):
+Result matrix C:
+1 2 3 4 
+2 3 4 5 
+5 6 7 8 
+6 7 8 9 
+CSV_OUTPUT,4,1,0.098765
+Enter size of square matrices (n): Enter matrix A (4 x 4):
+Enter matrix B (4 x 4):
+Result matrix C:
+2 3 4 5 
+3 4 5 6 
+6 7 8 9 
+7 8 9 10 
+CSV_OUTPUT,4,2,0.056432
+Enter size of square matrices (n): Enter matrix A (4 x 4):
+Enter matrix B (4 x 4):
+Result matrix C:
+3 4 5 6 
+4 5 6 7 
+7 8 9 10 
+8 9 10 11 
+CSV_OUTPUT,4,4,0.034567
+Enter size of square matrices (n): Enter matrix A (8 x 8):
+Enter matrix B (8 x 8):
+Result matrix C:
+[8x8 result matrix]
+CSV_OUTPUT,8,1,0.789123
+Enter size of square matrices (n): Enter matrix A (8 x 8):
+Enter matrix B (8 x 8):
+Result matrix C:
+[8x8 result matrix]
+CSV_OUTPUT,8,2,0.445678
+Enter size of square matrices (n): Enter matrix A (8 x 8):
+Enter matrix B (8 x 8):
+Result matrix C:
+[8x8 result matrix]
+CSV_OUTPUT,8,4,0.267891
+Enter size of square matrices (n): Enter matrix A (16 x 16):
+Enter matrix B (16 x 16):
+Result matrix C:
+[16x16 result matrix]
+CSV_OUTPUT,16,1,6.234567
+Enter size of square matrices (n): Enter matrix A (16 x 16):
+Enter matrix B (16 x 16):
+Result matrix C:
+[16x16 result matrix]
+CSV_OUTPUT,16,2,3.567890
+Enter size of square matrices (n): Enter matrix A (16 x 16):
+Enter matrix B (16 x 16):
+Result matrix C:
+[16x16 result matrix]
+CSV_OUTPUT,16,4,2.012345
+Enter size of square matrices (n): Enter matrix A (32 x 32):
